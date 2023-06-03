@@ -10,6 +10,12 @@ module.exports = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      height: {
+        96: "36rem",
+      },
+      width: {
+        96: "36rem",
         "hero-pattern": "url('/public/image/bg.jpg')",
         "footer-texture": "url('')",
       },
