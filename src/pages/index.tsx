@@ -1,9 +1,18 @@
 import React from "react"
 
-interface HomePageProps {}
+import HomeHero from "@/components/home/home-hero"
+import Layout from "@/components/layout"
+
+interface HomePageProps {
+  data?: string
+}
 
 const HomePage: React.FC<HomePageProps> = () => {
-  return <div>HomePage</div>
+  return (
+    <Layout>
+      <HomeHero />
+    </Layout>
+  )
 }
 
 export default HomePage
