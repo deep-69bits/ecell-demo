@@ -16,6 +16,8 @@ module.exports = {
       },
       width: {
         96: "36rem",
+        "hero-pattern": "url('/public/image/bg.jpg')",
+        "footer-texture": "url('')",
       },
     },
   },
