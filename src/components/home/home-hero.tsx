@@ -1,8 +1,6 @@
 import React from "react"
 import Image from "next/image"
-
-import HomeBackgroundImage from "@/assets/image/Home-background.jpg"
-
+import HomeBackgroundImage from "@/assets/image/home-background.jpg"
 import Button from "@/components/atoms/button"
 
 const HomeHero = () => {
