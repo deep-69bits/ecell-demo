@@ -38,21 +38,26 @@
   },
   "plugins": ["prettier", "simple-import-sort", "@typescript-eslint"],
   "overrides": [
+    // override "simple-import-sort" config
     {
-      "files": ["**/*.js", "**/*.ts", "**/*.tsx"],
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
       "rules": {
         "simple-import-sort/imports": [
           "error",
           {
             "groups": [
-              ["^react$", "^[a-z]"],
-              ["^@"],
-              ["^@/components"],
-              ["^~"],
+              // Packages `react` related packages come first.
+              ["^react", "^@?\\w"],
+              // Internal packages.
+              ["^(@|components)(/.*|$)"],
+              // Side effect imports.
+              ["^\\u0000"],
+              // Parent imports. Put `..` last.
               ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              // Other relative imports. Put same-folder imports and `.` last.
               ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-              ["^.+\\.s?css$"],
-              ["^\\u0000"]
+              // Style imports.
+              ["^.+\\.?(css)$"]
             ]
           }
         ]
