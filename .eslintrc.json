@@ -38,6 +38,7 @@
   },
   "plugins": ["prettier", "simple-import-sort", "@typescript-eslint"],
   "overrides": [
+
     // override "simple-import-sort" config
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
