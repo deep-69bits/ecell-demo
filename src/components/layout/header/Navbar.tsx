@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 
 import HamburgerIcon from "@/assets/image/Icon.png"
-import Logo from "@/assets/image/logo.png"
+import logo from "@/assets/image/logo.png"
 
 interface NavbarProps {
   hamburgerIcon: string
@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ hamburgerIcon }) => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <a href="">
-            <Image className="h-14" src={Logo} alt="Logo" width={70} />
+            <Image className="h-14" src={logo} alt="Logo" width={70} />
           </a>
           <a href="">
             <span className="ml-2 text-sm font-bold text-gray-300 md:text-base lg:text-lg">
