@@ -12,7 +12,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, className }) => {
   return (
     <>
-      <Navbar />
+      <Navbar hamburgerIcon={""} />
       <main className={clsx("", className)}>{children}</main>
       <Footer />
     </>
