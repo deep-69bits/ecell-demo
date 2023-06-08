@@ -1,15 +1,9 @@
-import React from "react"
-
-import Image from "next/image"
-
-import HomeBackgroundImage from "@/assets/image/home-background.jpg"
-
 import Button from "@/components/atoms/button"
 
 const HomeHero = () => {
   return (
     <>
-      <div className="gradient h-screen overflow-hidden bg-black bg-gradient-to-b  from-black  from-5% via-[#04b6fc] to-black   to-60% bg-cover bg-center">
+      <div className="gradient h-screen overflow-hidden bg-black bg-gradient-to-b  from-black  from-5% via-[#04b6fc] to-black   to-60% bg-cover bg-center">
         <div className="container mx-auto px-4 pt-20 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="flex flex-col items-start justify-center">

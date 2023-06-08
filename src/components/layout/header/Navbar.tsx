@@ -5,7 +5,7 @@ import HamburgerIcon from "@/assets/image/Icon.png"
 import logo from "@/assets/image/logo.png"
 
 interface NavbarProps {
-  hamburgerIcon: string
+  hamburgerIcon?: string
 }
 
 const Navbar: React.FC<NavbarProps> = ({ hamburgerIcon }) => {
